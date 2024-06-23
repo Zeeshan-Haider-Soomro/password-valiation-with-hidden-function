@@ -3,11 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* body{
-    height: 75vh;
-} */
+body{
+    background: #212832;   
+}
 .container-fluid{
-    /* background-color: black; */
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@ button{
 .main2{
     color: aliceblue;
     background: #212832;
-    /* height: 100vh; */
+    height: 100vh;
 }
 input{
     background-color: white;
@@ -62,7 +62,18 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 10px; */
-    /* height: 150px; */
-
 }
+
+#error{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+

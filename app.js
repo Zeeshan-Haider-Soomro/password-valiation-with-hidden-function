@@ -7,6 +7,7 @@ function loginForm(){
     
     let email = document.getElementById("email")
     let password = document.getElementById("password")
+    let error = document.getElementById("error")
     let regEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
     let regPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
 
@@ -20,19 +21,26 @@ function loginForm(){
                     title: "LOGIN",
                     showConfirmButton: false,
                     timer: 1500
-                  });
+                });
+                error.innerHTML = " "
             }
             else{
-                alert("password incorrect")
+                // alert("password incorrect")
+                error.innerHTML = "password incorrect"
             }
         }
         else{
-            alert("email incorrect")
+            // alert("email incorrect")
+            error.innerHTML = "email incorrect"
         }
     }
     else{
-        alert("email and password incorrect")
+        // alert("email and password incorrect")
+        error.innerHTML = "email and password incorrect"
     }
+    
+    
+
 
 }
 
